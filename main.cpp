@@ -7,8 +7,11 @@ int main () {
     
     setlocale(LC_ALL, "portuguese");
     
-    personagem heroi("herói", 100, 10);
+    Personagem heroi("herói", 100, 10);
     heroi.apresentar();
+    
+    Inimigo goblin("Goblin", 30, 5, "Goblin");
+    goblin.apresentar();
     
  return 0;
 }
