@@ -1,17 +1,18 @@
 #include <iostream>
-#include "personagem.h"
+#include "combate.h" 
 
 using namespace std;
 
-int main () {
+int main() {
+   
+    string nomePersonagem = "Godzin Prozin";
+    int vidaPersonagem = 100;
+    int ataquePersonagem = 25;
+
     
-    setlocale(LC_ALL, "portuguese");
-    
-    Personagem heroi("herói", 100, 10);
-    heroi.apresentar();
-    
-    Inimigo goblin("Goblin", 30, 5, "Goblin");
-    goblin.apresentar();
-    
- return 0;
+    exibir(nomePersonagem, vidaPersonagem, ataquePersonagem);
+
+
+    system("pause"); 
+    return 0;
 }
