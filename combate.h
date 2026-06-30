@@ -13,4 +13,15 @@ inline void exibir(std::string nome, int vida, int ataque) {
     std::cout << "---------------------------" << std::endl;
 }
 
+
+inline int dano(int ataque, int defesa) {
+    int resultado = ataque - defesa;
+    
+    if (resultado < 0) {
+        return 0; 
+    }
+    
+    return resultado; 
+}
+
 #endif
